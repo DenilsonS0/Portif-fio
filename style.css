@@ -1,7 +1,3 @@
-/* =====================================================
-   RESET
-===================================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +18,6 @@ body {
 a {
     text-decoration: none;
 }
-
-
-/* =====================================================
-   NAVBAR
-===================================================== */
 
 .navbar {
     background: rgba(3, 10, 18, 0.96);
@@ -75,18 +66,14 @@ a {
     margin-left: 5px;
 }
 
-
-/* =====================================================
-   HERO
-===================================================== */
-
 .hero {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 70px;
-
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 
     background:
         radial-gradient(
@@ -100,9 +87,6 @@ a {
             transparent 30%
         ),
         #050d17;
-
-    position: relative;
-    overflow: hidden;
 }
 
 .hero::after {
@@ -113,6 +97,7 @@ a {
     width: 35%;
     height: 80%;
     opacity: 0.08;
+    pointer-events: none;
 
     background-image:
         linear-gradient(
@@ -126,17 +111,18 @@ a {
         );
 
     background-size: 35px 35px;
-    pointer-events: none;
+}
+
+.foto-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
 .foto-hero {
     width: 275px;
     height: 275px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 3px solid #1683ff;
 
     box-shadow:
@@ -199,9 +185,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-
     margin-top: 28px;
-
     color: #b8c2cc;
     font-size: 14px;
 }
@@ -211,13 +195,8 @@ a {
     margin-right: 5px;
 }
 
-
-/* =====================================================
-   SEÇÕES
-===================================================== */
-
 .secao {
-    padding: 65px 0;
+    padding: 70px 0;
     border-top: 1px solid #142231;
     background: #050d17;
 }
@@ -226,7 +205,6 @@ a {
     display: flex;
     align-items: center;
     gap: 12px;
-
     margin-bottom: 25px;
 }
 
@@ -244,11 +222,6 @@ a {
 .secao p {
     color: #d0d7df;
 }
-
-
-/* =====================================================
-   SOBRE
-===================================================== */
 
 .destaques {
     border-left: 1px solid #1d3044;
@@ -274,22 +247,18 @@ a {
     margin-right: 8px;
 }
 
-
-/* =====================================================
-   TECNOLOGIAS
-===================================================== */
-
 .tecnologias-section {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .tecnologias-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 
-    padding: 20px;
+    padding: 25px;
 
     border: 1px solid #1c2d40;
     border-radius: 10px;
@@ -298,16 +267,27 @@ a {
 }
 
 .tecnologia {
-    min-width: 70px;
+    min-width: 95px;
+    min-height: 85px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     gap: 8px;
 
     color: #ffffff;
-
     font-size: 12px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.tecnologia:hover {
+    background: #0d1b2b;
+    transform: translateY(-3px);
 }
 
 .tecnologia i {
@@ -318,11 +298,6 @@ a {
 .tecnologia span {
     color: #d7dee7;
 }
-
-
-/* =====================================================
-   PROJETOS
-===================================================== */
 
 .titulo-projetos {
     display: flex;
@@ -347,21 +322,15 @@ a {
 
 .projeto-card {
     height: 100%;
-
     background: #08121e;
-
     border: 1px solid #1c2d40;
-
     border-radius: 10px;
-
     overflow: hidden;
-
     transition: 0.3s;
 }
 
 .projeto-card:hover {
     transform: translateY(-5px);
-
     border-color: #1683ff;
 
     box-shadow:
@@ -416,21 +385,30 @@ a {
         );
 }
 
-.entregas {
-    background:
-        linear-gradient(
-            135deg,
-            #12314a,
-            #071523
-        );
-}
-
 .leo {
     background:
         linear-gradient(
             135deg,
             #483507,
             #17130a
+        );
+}
+
+.libras {
+    background:
+        linear-gradient(
+            135deg,
+            #263d68,
+            #101a2c
+        );
+}
+
+.entregas {
+    background:
+        linear-gradient(
+            135deg,
+            #12314a,
+            #071523
         );
 }
 
@@ -454,19 +432,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
-
     margin-top: 15px;
 }
 
 .tags span {
     background: #172638;
-
     color: #dce8f5;
-
     padding: 4px 9px;
-
     border-radius: 15px;
-
     font-size: 11px;
 }
 
@@ -490,26 +463,43 @@ a {
     color: #70b5ff;
 }
 
+.projeto-em-desenvolvimento {
+    opacity: 0.9;
+}
 
-/* =====================================================
-   EXPERIÊNCIA
-===================================================== */
+.status-projeto {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    background: rgba(22, 131, 255, 0.15);
+    border: 1px solid #1683ff;
+
+    color: #62adff;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+.link-desativado {
+    color: #7e8a96;
+    font-size: 13px;
+    font-weight: 600;
+}
 
 .timeline {
     position: relative;
-
     border-left: 1px solid #1c3b5b;
-
     margin-left: 10px;
 }
 
 .timeline-item {
     position: relative;
-
     padding: 0 0 30px 25px;
-
     border-bottom: 1px solid #142231;
-
     margin-bottom: 25px;
 }
 
@@ -549,19 +539,10 @@ a {
     font-size: 13px;
 }
 
-.timeline-header .data {
-    white-space: nowrap;
-}
-
 .timeline-item p {
     margin-top: 10px;
     font-size: 14px;
 }
-
-
-/* =====================================================
-   FORMAÇÃO
-===================================================== */
 
 .formacao-item {
     margin-bottom: 30px;
@@ -582,10 +563,6 @@ a {
     font-size: 13px;
 }
 
-.formacao-item strong {
-    color: #4ecb8d;
-}
-
 .lista-cursos {
     padding-left: 20px;
 }
@@ -600,13 +577,13 @@ a {
     color: #1683ff;
 }
 
-
-/* =====================================================
-   CONTATO
-===================================================== */
-
 .contato-section {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
+}
+
+.contato-titulo {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .contato-info p {
@@ -634,29 +611,14 @@ a {
     color: #1683ff;
 }
 
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
 footer {
     border-top: 1px solid #142231;
-
     padding: 20px;
-
     text-align: center;
-
     color: #7e8a96;
-
     font-size: 12px;
-
     background: #030912;
 }
-
-
-/* =====================================================
-   RESPONSIVO
-===================================================== */
 
 @media (max-width: 991px) {
 
@@ -702,15 +664,13 @@ footer {
         flex-direction: column;
         gap: 5px;
     }
-
-    .timeline-header .data {
-        white-space: normal;
-    }
-
 }
 
-
 @media (max-width: 576px) {
+
+    .logo-nome {
+        display: none;
+    }
 
     .hero h1 {
         font-size: 34px;
@@ -737,11 +697,14 @@ footer {
     }
 
     .tecnologia {
-        min-width: 55px;
+        min-width: 75px;
     }
 
     .tecnologia i {
         font-size: 25px;
     }
 
+    .projeto-preview {
+        height: 150px;
+    }
 }
