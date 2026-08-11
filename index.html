@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Denilson Oliveira | Desenvolvedor Júnior</title>
+    <title>Denilson Silva Oliveira | Desenvolvedor Júnior</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description"
+          content="Portfólio de Denilson Silva Oliveira, Desenvolvedor Júnior com foco em Backend, APIs e Banco de Dados.">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+        <a class="navbar-brand" href="#inicio">
+            <span class="logo-ds">DS</span>
+            <span class="logo-nome">Denilson Oliveira</span>
+        </a>
 
-            <a class="navbar-brand" href="#inicio">
-                <span class="logo-ds">DS</span>
-                <span class="logo-nome">Denilson Oliveira</span>
-            </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Abrir menu">
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="menu">
 
-            </button>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            <div class="collapse navbar-collapse" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Início</a>
+                </li>
 
-                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Início</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia">Experiência</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiência</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacao">Formação</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacao">Formação</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
+                <li class="nav-item social-nav">
+                    <a
+                        class="nav-link"
+                        href="https://github.com/DenilsonS0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
 
-                    <li class="nav-item social-nav">
-                        <a class="nav-link" href="https://github.com/DenilsonS0" target="_blank">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </li>
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
 
-                    <li class="nav-item social-nav">
-                        <a class="nav-link"
-                            href="https://www.linkedin.com/in/denilson-silva-80384b299/"
-                            target="_blank">
+                <li class="nav-item social-nav">
+                    <a
+                        class="nav-link"
+                        href="https://www.linkedin.com/in/denilson-silva-80384b299/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
 
-                            <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
 
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+            </ul>
 
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <!-- ================= INÍCIO ================= -->
+<main>
 
     <section id="inicio" class="hero">
 
@@ -98,40 +113,30 @@
 
             <div class="row align-items-center">
 
-                <!-- FOTO -->
-
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
 
-                    <img src="denilson.jpg"
-                        alt="Foto de Denilson Oliveira"
-                        class="foto-hero">
+                    <div class="foto-wrapper">
+                        <img
+                            src="denilson.jpg"
+                            alt="Foto de Denilson Silva Oliveira"
+                            class="foto-hero">
+                    </div>
 
                 </div>
 
-
-                <!-- APRESENTAÇÃO -->
-
                 <div class="col-lg-8">
 
-                    <p class="saudacao">
-                        Olá, eu sou
-                    </p>
+                    <p class="saudacao">Olá, eu sou</p>
 
-                    <h1>
-                        Denilson Silva de Oliveira
-                    </h1>
+                    <h1>Denilson Silva Oliveira</h1>
 
-                    <h2>
-                        Desenvolvedor Júnior | Backend
-                    </h2>
+                    <h2>Desenvolvedor Júnior | Backend</h2>
 
                     <p class="descricao">
-                        Desenvolvedor em constante aprendizado, apaixonado por
-                        tecnologia e por criar soluções que geram impacto no
-                        dia a dia das pessoas. Focado em desenvolvimento
-                        backend, APIs e bancos de dados.
+                        Profissional formado em Análise e Desenvolvimento de
+                        Sistemas, com foco em desenvolvimento de software,
+                        APIs, bancos de dados e soluções web.
                     </p>
-
 
                     <div class="botoes-hero">
 
@@ -140,17 +145,17 @@
                             Ver Projetos
                         </a>
 
-                        <a href="curriculo.pdf"
+                        <a
+                            href="curriculo.pdf"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="btn btn-outline-light">
 
-                            <i class="bi bi-download"></i>
-                            Download Currículo
-
+                            <i class="bi bi-file-earmark-person"></i>
+                            Currículo
                         </a>
 
                     </div>
-
 
                     <div class="contato-hero">
 
@@ -180,62 +185,48 @@
     </section>
 
 
-    <!-- ================= SOBRE ================= -->
-
     <section id="sobre" class="secao">
 
         <div class="container">
 
-            <div class="row">
+            <div class="row g-5 align-items-start">
 
                 <div class="col-lg-8">
 
                     <div class="titulo-secao">
-
                         <i class="bi bi-person"></i>
-
                         <h2>Sobre mim</h2>
-
                     </div>
 
                     <p>
                         Sou formado em Análise e Desenvolvimento de Sistemas
-                        e atualmente curso Sistemas de Informação.
+                        e tenho interesse em construir minha carreira
+                        profissional na área de Tecnologia da Informação.
                     </p>
 
                     <p>
-                        Tenho experiência prática com desenvolvimento de
-                        sistemas, APIs, bancos de dados e integração com
-                        mapas e geolocalização.
+                        Tenho experiência com desenvolvimento de aplicações,
+                        APIs, bancos de dados e tecnologias para desenvolvimento
+                        web, além de projetos próprios desenvolvidos durante
+                        minha formação e estudos.
                     </p>
 
                     <p>
-                        Busco uma oportunidade na área de tecnologia para
-                        continuar evoluindo profissionalmente e contribuir
-                        com soluções de qualidade.
+                        Busco uma oportunidade como desenvolvedor para aplicar
+                        meus conhecimentos, aprender novas tecnologias e
+                        evoluir profissionalmente dentro da área de TI.
                     </p>
 
                 </div>
-
 
                 <div class="col-lg-4">
 
                     <div class="destaques">
 
                         <h3>
-                            <i class="bi bi-star"></i>
+                            <i class="bi bi-stars"></i>
                             Destaques
                         </h3>
-
-                        <p>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Estágio em TI
-                        </p>
-
-                        <p>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Projetos próprios
-                        </p>
 
                         <p>
                             <i class="bi bi-check-circle-fill"></i>
@@ -244,7 +235,17 @@
 
                         <p>
                             <i class="bi bi-check-circle-fill"></i>
-                            APIs e Banco de Dados
+                            APIs REST
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Banco de Dados
+                        </p>
+
+                        <p>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Projetos próprios
                         </p>
 
                         <p>
@@ -263,20 +264,14 @@
     </section>
 
 
-    <!-- ================= TECNOLOGIAS ================= -->
-
     <section id="habilidades" class="secao tecnologias-section">
 
         <div class="container">
 
             <div class="titulo-secao">
-
-                <i class="bi bi-code-slash"></i>
-
-                <h2>Tecnologias</h2>
-
+                <i class="bi bi-code-square"></i>
+                <h2>Habilidades</h2>
             </div>
-
 
             <div class="tecnologias-grid">
 
@@ -357,8 +352,6 @@
     </section>
 
 
-    <!-- ================= PROJETOS ================= -->
-
     <section id="projetos" class="secao">
 
         <div class="container">
@@ -366,18 +359,17 @@
             <div class="titulo-projetos">
 
                 <div class="titulo-secao">
-
                     <i class="bi bi-folder"></i>
-
                     <h2>Projetos</h2>
-
                 </div>
 
-                <a href="https://github.com/DenilsonS0"
+                <a
+                    href="https://github.com/DenilsonS0"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="ver-github">
 
-                    Ver todos no GitHub
+                    Ver GitHub
                     <i class="bi bi-arrow-right"></i>
 
                 </a>
@@ -388,11 +380,9 @@
             <div class="row g-4">
 
 
-                <!-- AMIGO CANINO -->
-
                 <div class="col-lg-4">
 
-                    <div class="projeto-card">
+                    <article class="projeto-card">
 
                         <div class="projeto-preview amigo">
                             <span>🐶</span>
@@ -401,31 +391,38 @@
 
                         <div class="projeto-conteudo">
 
-                            <h3>
-                                🐾 Amigo Canino
-                            </h3>
+                            <h3>🐾 Amigo Canino</h3>
 
                             <p>
-                                API REST para gerenciamento de animais
-                                disponíveis para adoção. Permite cadastrar,
-                                listar, atualizar e remover animais e
-                                informações.
+                                Projeto voltado à adoção de animais, com
+                                gerenciamento das informações dos cães
+                                disponíveis para adoção.
                             </p>
 
                             <div class="tags">
-
                                 <span>Node.js</span>
                                 <span>Express</span>
                                 <span>MySQL</span>
-                                <span>Insomnia</span>
                                 <span>REST API</span>
-
+                                <span>Insomnia</span>
                             </div>
 
                             <div class="projeto-links">
 
-                                <a href="https://github.com/DenilsonS0"
-                                    target="_blank">
+                                <a
+                                    href="https://denilsons0.github.io/amigo-canino-site/index.html"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    Ver Projeto
+                                    <i class="bi bi-box-arrow-up-right"></i>
+
+                                </a>
+
+                                <a
+                                    href="https://github.com/DenilsonS0/amigo-canino-site"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
 
                                     GitHub
                                     <i class="bi bi-github"></i>
@@ -436,68 +433,14 @@
 
                         </div>
 
-                    </div>
+                    </article>
 
                 </div>
 
 
-                <!-- SISTEMA DE ENTREGAS -->
-
                 <div class="col-lg-4">
 
-                    <div class="projeto-card">
-
-                        <div class="projeto-preview entregas">
-                            <span>🚚</span>
-                            <strong>Entregas & Rotas</strong>
-                        </div>
-
-                        <div class="projeto-conteudo">
-
-                            <h3>
-                                🚚 Sistema de Entregas e Rotas
-                            </h3>
-
-                            <p>
-                                Sistema para gerenciamento de entregas,
-                                endereços, rotas e cálculo de distâncias,
-                                com integração com mapas.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Node.js</span>
-                                <span>MySQL</span>
-                                <span>JavaScript</span>
-                                <span>Leaflet</span>
-                                <span>API</span>
-
-                            </div>
-
-                            <div class="projeto-links">
-
-                                <a href="https://github.com/DenilsonS0"
-                                    target="_blank">
-
-                                    GitHub
-                                    <i class="bi bi-github"></i>
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- LEO CAÇAMBAS -->
-
-                <div class="col-lg-4">
-
-                    <div class="projeto-card">
+                    <article class="projeto-card">
 
                         <div class="projeto-preview leo">
                             <span>🏗️</span>
@@ -506,40 +449,40 @@
 
                         <div class="projeto-conteudo">
 
-                            <h3>
-                                🏗️ Leo Caçambas
-                            </h3>
+                            <h3>🏗️ Leo Caçambas</h3>
 
                             <p>
-                                Site institucional desenvolvido para
-                                divulgação dos serviços da empresa e
-                                contato direto com clientes.
+                                Site institucional desenvolvido para divulgação
+                                dos serviços da empresa e contato direto com
+                                clientes.
                             </p>
 
                             <div class="tags">
-
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                                 <span>Bootstrap</span>
-
                             </div>
 
                             <div class="projeto-links">
 
-                                <a href="https://github.com/DenilsonS0"
-                                    target="_blank">
+                                <a
+                                    href="https://leocacambas.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
 
-                                    GitHub
-                                    <i class="bi bi-github"></i>
+                                    Ver Site
+                                    <i class="bi bi-box-arrow-up-right"></i>
 
                                 </a>
 
-                                <a href="https://leocacambas.com/"
-                                    target="_blank">
+                                <a
+                                    href="https://github.com/DenilsonS0/site-leo-cacambas"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
 
-                                    Ver Demo
-                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    GitHub
+                                    <i class="bi bi-github"></i>
 
                                 </a>
 
@@ -547,7 +490,113 @@
 
                         </div>
 
-                    </div>
+                    </article>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <article class="projeto-card">
+
+                        <div class="projeto-preview libras">
+                            <span>🤟</span>
+                            <strong>Conecta Libras</strong>
+                        </div>
+
+                        <div class="projeto-conteudo">
+
+                            <h3>🤟 Conecta Libras</h3>
+
+                            <p>
+                                Plataforma web voltada à inclusão e
+                                acessibilidade, com conteúdos sobre Libras
+                                e comunicação inclusiva.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Web</span>
+                            </div>
+
+                            <div class="projeto-links">
+
+                                <a
+                                    href="https://denilsons0.github.io/site/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    Ver Projeto
+                                    <i class="bi bi-box-arrow-up-right"></i>
+
+                                </a>
+
+                                <a
+                                    href="https://github.com/DenilsonS0/site"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    GitHub
+                                    <i class="bi bi-github"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <article class="projeto-card projeto-em-desenvolvimento">
+
+                        <div class="projeto-preview entregas">
+
+                            <span>🚚</span>
+                            <strong>Entregas & Rotas</strong>
+
+                            <span class="status-projeto">
+                                Em desenvolvimento
+                            </span>
+
+                        </div>
+
+                        <div class="projeto-conteudo">
+
+                            <h3>🚚 Sistema de Entregas e Rotas</h3>
+
+                            <p>
+                                Sistema em desenvolvimento para gerenciamento
+                                de entregas, endereços e rotas, com banco de
+                                dados e integração com mapas.
+                            </p>
+
+                            <div class="tags">
+                                <span>Node.js</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>Leaflet</span>
+                                <span>API</span>
+                            </div>
+
+                            <div class="projeto-links">
+
+                                <span class="link-desativado">
+                                    <i class="bi bi-hourglass-split"></i>
+                                    Em desenvolvimento
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -559,23 +608,16 @@
     </section>
 
 
-    <!-- ================= EXPERIÊNCIA ================= -->
-
     <section id="experiencia" class="secao">
 
         <div class="container">
 
             <div class="titulo-secao">
-
                 <i class="bi bi-briefcase"></i>
-
                 <h2>Experiência</h2>
-
             </div>
 
-
             <div class="timeline">
-
 
                 <div class="timeline-item">
 
@@ -585,19 +627,16 @@
 
                         <div>
                             <h3>Estagiário em TI</h3>
-                            <span>ENIAC – Centro Universitário</span>
+                            <span>ENIAC</span>
                         </div>
-
-                        <span class="data">
-                            09/04/2025 – 09/06/2025
-                        </span>
 
                     </div>
 
                     <p>
-                        Atuação no setor de Tecnologia da Informação,
-                        com suporte técnico, manutenção de sistemas
-                        e participação em projetos internos.
+                        Atuação na área de Tecnologia da Informação,
+                        adquirindo experiência prática em ambiente
+                        profissional e desenvolvimento de conhecimentos
+                        técnicos.
                     </p>
 
                 </div>
@@ -614,16 +653,12 @@
                             <span>Colégio Parthenon</span>
                         </div>
 
-                        <span class="data">
-                            17/04/2023 – 25/09/2025
-                        </span>
-
                     </div>
 
                     <p>
-                        Responsável pela segurança do ambiente escolar,
-                        controle de acesso, rondas e identificação de
-                        situações de risco.
+                        Responsável pela segurança do ambiente,
+                        controle de acesso, monitoramento e atendimento
+                        de situações relacionadas à rotina operacional.
                     </p>
 
                 </div>
@@ -640,20 +675,14 @@
                             <span>Tenda Atacado</span>
                         </div>
 
-                        <span class="data">
-                            12/2020 – 11/2022
-                        </span>
-
                     </div>
 
                     <p>
-                        Atuação no caixa central, acompanhamento de PDVs,
-                        fechamento de caixas, suporte à tesouraria e
-                        análise de valores dos produtos.
+                        Atuação no caixa central, fechamento de caixas,
+                        suporte às operações e atendimento ao cliente.
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -662,27 +691,18 @@
     </section>
 
 
-    <!-- ================= FORMAÇÃO ================= -->
-
     <section id="formacao" class="secao">
 
         <div class="container">
 
-            <div class="row">
-
-
-                <!-- FORMAÇÃO -->
+            <div class="row g-5">
 
                 <div class="col-lg-6">
 
                     <div class="titulo-secao">
-
                         <i class="bi bi-mortarboard"></i>
-
                         <h2>Formação</h2>
-
                     </div>
-
 
                     <div class="formacao-item">
 
@@ -690,17 +710,13 @@
                             Análise e Desenvolvimento de Sistemas
                         </h3>
 
-                        <p>
-                            ENIAC
-                        </p>
+                        <p>ENIAC</p>
 
                         <span>
-                            06/2023 – 12/2025
-                            <strong>(Concluído)</strong>
+                            Concluído
                         </span>
 
                     </div>
-
 
                     <div class="formacao-item">
 
@@ -708,13 +724,10 @@
                             Sistemas de Informação
                         </h3>
 
-                        <p>
-                            ENIAC
-                        </p>
+                        <p>ENIAC</p>
 
                         <span>
-                            Início: 2026 |
-                            Previsão: 2028
+                            Em andamento
                         </span>
 
                     </div>
@@ -722,44 +735,33 @@
                 </div>
 
 
-                <!-- CURSOS -->
-
                 <div class="col-lg-6">
 
                     <div class="titulo-secao">
-
                         <i class="bi bi-journal-code"></i>
-
                         <h2>Cursos</h2>
-
                     </div>
-
 
                     <ul class="lista-cursos">
 
                         <li>
-                            <strong>Banco de Dados</strong>
-                            – Fundação Bradesco (38h) – 2025
+                            Banco de Dados — Fundação Bradesco
                         </li>
 
                         <li>
-                            <strong>Python</strong>
-                            – Fundação Bradesco (53h) – 2025
+                            Python — Fundação Bradesco
                         </li>
 
                         <li>
-                            <strong>Capacitação em Inteligência Artificial</strong>
-                            – ENIAC (30h) – 2025
+                            Capacitação em Inteligência Artificial — ENIAC
                         </li>
 
                         <li>
-                            <strong>Fundamentos de Lógica de Programação</strong>
-                            – 15h
+                            Fundamentos de Lógica de Programação
                         </li>
 
                         <li>
-                            <strong>Introdução à Programação Orientada a Objetos</strong>
-                            – 5h
+                            Introdução à Programação Orientada a Objetos
                         </li>
 
                     </ul>
@@ -773,30 +775,26 @@
     </section>
 
 
-    <!-- ================= CONTATO ================= -->
-
     <section id="contato" class="secao contato-section">
 
         <div class="container">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center g-5">
 
                 <div class="col-lg-7">
 
                     <div class="titulo-secao">
-
                         <i class="bi bi-send"></i>
-
                         <h2>Contato</h2>
-
                     </div>
 
-                    <p>
-                        Estou disponível para novas oportunidades!
-                    </p>
+                    <h3 class="contato-titulo">
+                        Vamos conversar?
+                    </h3>
 
                     <p>
-                        Vamos conversar?
+                        Estou aberto a novas oportunidades na área de
+                        Tecnologia da Informação.
                     </p>
 
                 </div>
@@ -805,13 +803,13 @@
                 <div class="col-lg-5 contato-info">
 
                     <p>
-                        <i class="bi bi-telephone"></i>
-                        (11) 94836-3610
+                        <i class="bi bi-envelope"></i>
+                        denilsonsilva.oliveira@hotmail.com
                     </p>
 
                     <p>
-                        <i class="bi bi-envelope"></i>
-                        denilsonsilva.oliveira@hotmail.com
+                        <i class="bi bi-telephone"></i>
+                        (11) 94836-3610
                     </p>
 
                     <p>
@@ -819,18 +817,23 @@
                         Guarulhos - SP
                     </p>
 
-
                     <div class="contato-redes">
 
-                        <a href="https://github.com/DenilsonS0"
-                            target="_blank">
+                        <a
+                            href="https://github.com/DenilsonS0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
 
                             <i class="bi bi-github"></i>
 
                         </a>
 
-                        <a href="https://www.linkedin.com/in/denilson-silva-80384b299/"
-                            target="_blank">
+                        <a
+                            href="https://www.linkedin.com/in/denilson-silva-80384b299/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
 
                             <i class="bi bi-linkedin"></i>
 
@@ -846,21 +849,17 @@
 
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        © 2026 Denilson Silva de Oliveira.
-        Todos os direitos reservados.
-
-    </footer>
+</main>
 
 
-    <!-- Bootstrap JS -->
+<footer>
+    © 2026 Denilson Silva Oliveira. Todos os direitos reservados.
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
-
 </html>
